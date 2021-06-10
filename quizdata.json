@@ -1,0 +1,71 @@
+[
+  {
+    "question_id" : 0,
+    "question": "Tên viết tắt của trường đại học công nghiệp là gì ?",
+    "answers": [
+      {"id": 0, "text": "HaUI"},
+      {"id": 1, "text": "HNaUI"},
+      {"id": 2, "text": "HNUI"},
+	  {"id": 3, "text": "HANOIUI"}
+
+    ],
+    "correct": 0
+  },
+  {
+    "question_id" : 1,
+		"question" : "Đâu là logo của trường ĐH Công Nghiệp",
+		"answers"  : [
+			{"id"  : 0, "image" : "images/quizImages/tmu.jpg" },
+			{"id"  : 1, "image" : "images/quizImages/Hust.png" },
+			{"id"  : 2, "image" : "images/quizImages/HaUI.png" },
+			{"id"  : 3, "image" : "images/quizImages/dhqghn.png" }
+		],
+		"correct"  : 2
+	},
+	{
+      "question_id" : 2,
+		"question" : "Đúng hay sai : Trường ĐH Công Nghiệp nhiều bạn đẹp trai",
+		"answers"  : [
+			{"id"  : 0, "text" : "Sai"},
+			{"id"  : 1, "text" : "Đúng"}
+
+		],
+		"correct"  : 1
+	},
+	{
+      "question_id" : 3,
+		"question" : "Trường ĐH Công Nghiệp có bao nhiêu khoa và viện ?",
+		"answers"  : [
+			{"id"  : 0, "text" : "9"},
+			{"id"  : 1, "text" : "16"},
+			{"id"  : 2, "text" : "14"},
+			{"id"  : 3, "text" : "24"}
+		],
+		"correct"  : 2
+	},
+	{
+      "question_id" : 4,
+		"question" : "Đâu là ảnh đúng với tên khoa?",
+		"answers"  : [
+			{"id"  : 0, "text" : "Công nghệ thông tin", "image": "images/quizImages/fit.png"},
+			{"id"  : 1, "text" : "Cơ khí", "image": "images/quizImages/dien.png"},
+      		{"id"  : 2, "text" : "Kế Toán", "image": "images/quizImages/dulich.png"},
+      		{"id"  : 3, "text" : "Du Lịch", "image": "images/quizImages/ketoan.png"}
+
+		],
+		"correct"  : 0
+	},
+	{
+		"question_id" : 5,
+    "question": "Có khoảng bao nhiêu sinh viên trong trường ?",
+    "answers": [
+      {"id": 0, "text": "12.000"},
+      {"id": 1, "text": "20.000"},
+      {"id": 2, "text": "32.000"},
+	  {"id": 3, "text": "16.000"}
+
+    ],
+    "correct": 2
+	}
+
+]
