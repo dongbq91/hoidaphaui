@@ -38,6 +38,6 @@ $("#twitterbtn").click(function() {
   //create dynamic tweet text
   var tweet = $(".result").text();
   tweet = tweet.replace("You", "I");
-  var tweetURL = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(tweet + " Hãy thử nó tại đây! https://lovedongbq.netlify.app/");
+  var tweetURL = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(tweet + " Hãy thử nó tại đây! https://hoidaphaui.netlify.app/");
   $("#twitterbtn").attr("href", tweetURL);
 });
