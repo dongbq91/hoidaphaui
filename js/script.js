@@ -92,10 +92,10 @@ function quizActions(){
         getThisQuest('next');
         // change button text for first/last question
         if (questEnd === (questNum + 1)){
-          $('.btnNext').html('Finish <i class="fa fa-check" aria-hidden="true"></i>')
+          $('.btnNext').html('Kết Thúc <i class="fa fa-check" aria-hidden="true"></i>')
         }
         if (questEnd != (questNum + 1)){
-          $('.btnNext').html('Next <i class="fa fa-chevron-right" aria-hidden="true"></i>')
+          $('.btnNext').html('Chuyển tiếp <i class="fa fa-chevron-right" aria-hidden="true"></i>')
         }
         if (questNum != 2){
           $('.btnBack').removeClass('inactive')
@@ -109,7 +109,7 @@ function quizActions(){
         $('.btnBack').addClass('inactive')
       }
       if (questEnd != (questNum + 1)){
-        $('.btnNext').html('Next <i class="fa fa-chevron-right" aria-hidden="true"></i>')
+        $('.btnNext').html('Chuyển tiếp <i class="fa fa-chevron-right" aria-hidden="true"></i>')
       }
     });
 
@@ -131,7 +131,7 @@ function quizActions(){
         $(questBack).attr('id' , 'questionNow')
       }
       else {
-        alert('You can\'t back up any more, silly!'); // user is already on first question
+        alert('Bạn không thể quay lại'); // user is already on first question
         $(questNow).attr('id' , 'questionNow')
       }
     }
@@ -140,7 +140,7 @@ function quizActions(){
       var stillUnAnswered = $('.quizBody.unAnswered');
       $(stillUnAnswered[0]).attr('id' , 'questionNow');
       if (stillUnAnswered.length < 2) {
-        $('.btnNext').html('Finish <i class="fa fa-check" aria-hidden="true"></i>');
+        $('.btnNext').html('Kết thúc <i class="fa fa-check" aria-hidden="true"></i>');
       }
       if (stillUnAnswered.length < 1) {
         checkAns();
@@ -254,8 +254,8 @@ function buildQuiz(qID, qText, qAnswers, qLength, qCorrectAnswers){
   };
   midCodeFull = midCode.join(' ');
   // build HTML in parts
-  var quizTop = '<section class="quizBody"><h2 class="quizQuestion"><span class="questionNum">' + qID + '/' + qLength + '</span> ' + qText + '</h2><span class="quizAlert">This question requires an answer</span><div class="row">';
-  var quizBottom = '</div><footer><div class="row"><div class="col-sm-offset-3 col-sm-3 col-xs-6"><button class="btn btn-lg btn-default btnBack inactive"><i class="fa fa-chevron-left" aria-hidden="true"></i> Back</button></div><div class="col-sm-3 col-xs-6"><button class="btn btn-lg btn-default btnNext">Next <i class="fa fa-chevron-right" aria-hidden="true"></i></button></div></div></footer></section>';
+  var quizTop = '<section class="quizBody"><h2 class="quizQuestion"><span class="questionNum">' + qID + '/' + qLength + '</span> ' + qText + '</h2><span class="quizAlert">Có câu hỏi bạn chưa trả lời</span><div class="row">';
+  var quizBottom = '</div><footer><div class="row"><div class="col-sm-offset-3 col-sm-3 col-xs-6"><button class="btn btn-lg btn-default btnBack inactive"><i class="fa fa-chevron-left" aria-hidden="true"></i> Quay lại</button></div><div class="col-sm-3 col-xs-6"><button class="btn btn-lg btn-default btnNext">Chuyển tiếp <i class="fa fa-chevron-right" aria-hidden="true"></i></button></div></div></footer></section>';
   // assemble HTML parts
   var quizPiece = quizTop + midCodeFull + quizBottom;
   // inject each question/answer HTML into doc
