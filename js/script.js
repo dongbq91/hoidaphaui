@@ -254,7 +254,7 @@ function buildQuiz(qID, qText, qAnswers, qLength, qCorrectAnswers){
   };
   midCodeFull = midCode.join(' ');
   // build HTML in parts
-  var quizTop = '<section class="quizBody"><h2 class="quizQuestion"><span class="questionNum">' + qID + '/' + qLength + '</span> ' + qText + '</h2><span class="quizAlert">Có câu hỏi bạn chưa trả lời</span><div class="row">';
+  var quizTop = '<section class="quizBody"><h2 class="quizQuestion"><span class="questionNum">' + qID + '/' + qLength + '</span> ' + qText + '</h2><span class="quizAlert">Bạn chưa trả lời câu hỏi này</span><div class="row">';
   var quizBottom = '</div><footer><div class="row"><div class="col-sm-offset-3 col-sm-3 col-xs-6"><button class="btn btn-lg btn-default btnBack inactive"><i class="fa fa-chevron-left" aria-hidden="true"></i> Quay lại</button></div><div class="col-sm-3 col-xs-6"><button class="btn btn-lg btn-default btnNext">Chuyển tiếp <i class="fa fa-chevron-right" aria-hidden="true"></i></button></div></div></footer></section>';
   // assemble HTML parts
   var quizPiece = quizTop + midCodeFull + quizBottom;
