@@ -49,8 +49,8 @@
 		"answers"  : [
 			{"id"  : 0, "text" : "Công nghệ thông tin", "image": "images/quizImages/fit.png"},
 			{"id"  : 1, "text" : "Cơ khí", "image": "images/quizImages/dien.png"},
-      		{"id"  : 2, "text" : "Kế Toán", "image": "images/quizImages/dulich.png"},
-      		{"id"  : 3, "text" : "Du Lịch", "image": "images/quizImages/ketoan.png"}
+      		{"id"  : 2, "text" : "Du Lịch", "image": "images/quizImages/dulich.png"},
+      		{"id"  : 3, "text" : "Kế Toán", "image": "images/quizImages/ketoan.png"}
 
 		],
 		"correct"  : 0
